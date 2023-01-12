@@ -1,0 +1,35 @@
+alias xlaunch='/mnt/c/Program Files/VcXsrv/xlaunch.exe -run /mnt/c/Users/YuHung/Desktop/posd2022f_111598031_HW1/config.xlaunch'
+export DISPLAY=:0
+export LIBGL_ALWAYS_INDIRECT=1
+export XDG_RUNTIME_DIR=/mnt/c/Users/YuHung/Desktop/posd2022f_111598031_HW1
+export RUNLEVEL=3
+
+--------------
+
+alias xlaunch='/mnt/c/Program\ Files/VcXsrv/xlaunch.exe -run /mnt/c/xConfig/config.xlaunch'
+export DISPLAY=:0
+export LIBGL_ALWAYS_INDIRECT=1
+export XDG_RUNTIME_DIR=/mnt/c/xConfig
+export RUNLEVEL=3
+
+--------------
+
+sudo apt install udev
+sudo mv /var/lib/dpkg/info/udev.postinst /var/lib/dpkg/info/udev.postinst.backup
+sudo apt-get install -f
+
+
+VIM操作模式
+
+esc: 從 insert 模式回到 replace 模式
+----------------------------------------------------------------
+esc 後
+
+
+:q   -> quit
+:wq  -> write and quit
+
+:q!  -> quit (強制)
+:wq  -> quit (存取並離開)
+
+x
